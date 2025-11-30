@@ -5,7 +5,8 @@ FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /app
 
 # Copy your built jar file into the container
-COPY target/demo-0.0.1-SNAPSHOT.jar.original app.jar
+COPY target/demo-0.0.1-SNAPSHOT.jar app.jar
+
 
 # Expose the port your Spring Boot app runs on
 EXPOSE 7199
